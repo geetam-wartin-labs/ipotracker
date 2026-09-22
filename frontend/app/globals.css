@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F6F7F9;
+  color: #12172B;
+}
+
+/* Financial figures use tabular numerals everywhere by default */
+.figure {
+  font-variant-numeric: tabular-nums;
+}

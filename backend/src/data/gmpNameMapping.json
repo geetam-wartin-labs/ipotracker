@@ -1,0 +1,13 @@
+{
+  "_comment": "Manual tradingSymbol -> investorgain.com GMP-page slug mapping. DR-3 forbids matching across sources by company name — investorgain's table only exposes company name + this slug (from each row's <a href>), so the slug is what we match on. It's far more precise than the earlier free-text substring approach and is still hand-audited: add one entry per issue as it appears in the live GMP table's link href (e.g. href=\"/gmp/varmora-granito-ipo/1852/\" -> slug \"varmora-granito-ipo/1852\"). An issue with no entry here is skipped (fetcher returns null), never fuzzy-matched.",
+  "VARMORA": "varmora-granito-ipo/1852",
+  "MONEYVIEW": "moneyview-ipo/2198",
+  "ADROITIND": "adroit-industries-ipo/2268",
+  "ARMEE": "armee-infotech-ipo/1667",
+  "SWASTIKAIN": "swastika-infra-ipo/1708",
+  "ELEVATE": "elevate-campuses-ipo/1917",
+  "BMISL": "bench-mark-infotech-services-ipo/2366",
+  "HIMALAYAN": "himalayan-solar-ipo/1975",
+  "POOJALOGIS": "pooja-logistics-ipo/1982",
+  "COREIN": "core-integra-consulting-ipo/1888"
+}

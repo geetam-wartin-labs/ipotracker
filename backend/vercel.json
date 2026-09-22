@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/(.*)", "dest": "api/index.js" }],
+  "crons": [
+    { "path": "/api/cron/subscriptions?token=CRON_SECRET_PLACEHOLDER", "schedule": "30 4 * * *" },
+    { "path": "/api/cron/subscriptions?token=CRON_SECRET_PLACEHOLDER", "schedule": "*/30 5-12 * * *" },
+    { "path": "/api/cron/grey-market?token=CRON_SECRET_PLACEHOLDER", "schedule": "0 */2 * * *" },
+    { "path": "/api/cron/new-issues?token=CRON_SECRET_PLACEHOLDER", "schedule": "30 2,14 * * *" },
+    { "path": "/api/cron/issue-details?token=CRON_SECRET_PLACEHOLDER", "schedule": "30 2 * * *" },
+    { "path": "/api/cron/listing?token=CRON_SECRET_PLACEHOLDER", "schedule": "30 12 * * *" }
+  ]
+}
